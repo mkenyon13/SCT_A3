@@ -1,5 +1,10 @@
 name: "HCL AppScan CodeSweep"
 on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev_branch
   pull_request:
     types: [opened,synchronize]
 jobs:

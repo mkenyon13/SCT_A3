@@ -10,7 +10,7 @@ const dbConfig = {
     database: 'mydb'
 };
 
-function getUserInput(): Promise<string> {
+function getUserInput(): Promise<string> { 
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
